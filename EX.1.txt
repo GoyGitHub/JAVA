@@ -1,0 +1,30 @@
+Example 1.
+package andoyyy;
+import java.util.Scanner;
+public class main3 {
+		
+	public static void main(String[] args) { // TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+			
+		String lname, fname, mi;
+			
+		System.out.println("------------------------");
+		System.out.println("Student Information - AI");
+		System.out.println("------------------------");
+		System.out.println("");
+		System.out.print("Please Enter Last Name: ");
+		lname = input.nextLine();
+		System.out.print("Please Enter First Name: ");
+		fname = input.nextLine();
+		System.out.print("Please MI: ");
+		mi = input.nextLine();
+		System.out.println("--------------------------");
+		System.out.print("WELCOME" + " " + fname + " " + mi + " " + lname);
+		System.out.println(" You are now a JAVA Programmer!!!!");
+		
+		input.close();
+		System.exit(0);
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package andoyyy;
+import java.util.Scanner;
+public class main6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("*************************************");
+        System.out.print("Please enter year level (1 – 4) : ");
+        int year = scanner.nextInt();
+        System.out.println("*************************************");
+
+        switch (year) {
+            case 1:
+                System.out.println("Welcome FRESHMAN");
+                break;
+            case 2:
+                System.out.println("Welcome JUNIOR");
+                break;
+            case 3:
+                System.out.println("Welcome SOPHOMORE");
+                break;
+            case 4:
+                System.out.println("Welcome SENIOR");
+                break;
+            default:
+                System.out.println("Invalid year level entered.");
+        }
+
+        scanner.close();
+    }
+}

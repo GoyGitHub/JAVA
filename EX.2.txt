@@ -1,0 +1,28 @@
+package andoyyy;
+import java.util.Scanner;
+public class main4 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		double a, b, c;
+		double d = 74.49;
+		
+		System.out.println("Enter Prelim Grade: ");
+		a = input.nextDouble();
+		System.out.println("Enter Midterm Grade: ");
+		b = input.nextDouble();
+		System.out.println("--------------------------------");
+		c = (a+b)/2;
+			if (c>=d) {
+				System.out.println("Total Grade			:" + c);
+				System.out.println("Remarks				:PASSED");
+			}else {
+				System.out.println("Total Grade			:" + c);
+				System.out.println("Remarks				:FAILED");
+			}
+		input.close();
+		System.exit(0);
+	}
+
+}

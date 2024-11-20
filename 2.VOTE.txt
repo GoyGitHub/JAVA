@@ -1,0 +1,21 @@
+package andoyyy;
+import java.util.Scanner;
+
+public class main5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("******************************");
+        System.out.print("Please enter your age : ");
+        int age = scanner.nextInt(); 
+        System.out.println("***********************************");
+
+        if (age >= 18) {
+            System.out.println("Congratulations you are now qualified to vote!!!!!!");
+        } else {
+            System.out.println("Sorry, you are not qualified to vote.");
+        }
+
+        scanner.close();
+    }
+}

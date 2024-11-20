@@ -1,0 +1,40 @@
+package andoyyy;
+import java.util.Scanner;
+public class main3 {
+		
+	public static void main(String[] args) { // TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+			
+		String lname, fname, mi, crs, sctn, fsub;
+			
+		System.out.println("----------------------------------");
+		System.out.println("|   Student Information - AI     |");
+		System.out.println("----------------------------------");
+		System.out.println("");
+		System.out.print("Please Enter Last Name: ");
+		lname = input.nextLine();
+		System.out.print("Please Enter First Name: ");
+		fname = input.nextLine();
+		System.out.print("Please MI: ");
+		mi = input.nextLine();
+		System.out.print("Please Enter your Course: ");
+		crs= input.nextLine();
+		System.out.print("Please Enter your Section: ");
+		sctn = input.nextLine();
+		System.out.print("Please Enter your Favorite Subject: ");
+		fsub = input.nextLine();
+		System.out.println("----------------------------------");
+		System.out.println("Thank you, let me now repeat all the");
+		System.out.println("Information you have provided.");
+		System.out.println("----------------------------------");
+		System.out.println("Your name is" + " " + fname + " " + mi + " " + lname + ".");
+		System.out.println("You are enrolled in the course" + " " + crs + ".");
+		System.out.println("You are with section" + " " + sctn + ".");
+		System.out.println("And your favorite subject is" + " " + fsub + ".");
+		
+		input.close();
+		System.exit(0);
+		
+	}
+
+}
