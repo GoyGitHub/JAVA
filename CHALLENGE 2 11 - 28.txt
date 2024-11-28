@@ -1,0 +1,41 @@
+package andoyyy;
+import java.util.Scanner;
+public class main7 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter grade for period 1: ");
+        double grade1 = scanner.nextDouble();
+        System.out.print("Enter grade for period 2: ");
+        double grade2 = scanner.nextDouble();
+        System.out.print("Enter grade for period 3: ");
+        double grade3 = scanner.nextDouble();
+        
+        double GA = (grade1 + grade2 + grade3) / 3;
+        System.out.printf("General Average (GA): ", GA);
+        
+        if (GA >= 97) {
+            System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
+        } else if (GA <= 96 && GA >= 94) {
+            System.out.println("Equivalent Grade: 1.25 Remarks: Excellent");
+        } else if (GA <= 93 && GA >= 91) {
+            System.out.println("Equivalent Grade: 1.50 Remarks: Very Good");
+        } else if (GA <= 90 && GA >= 88) {
+            System.out.println("Equivalent Grade: 1.75 Remarks: Very Good");
+        } else if (GA <= 87 && GA >= 85) {
+            System.out.println("Equivalent Grade: 2.00 Remarks: Good");
+        } else if (GA <= 84 && GA >= 82) {
+            System.out.println("Equivalent Grade: 2.25 Remarks: Good");
+        } else if (GA <= 81 && GA >= 79) {
+            System.out.println("Equivalent Grade: 2.50 Remarks: Satisfactory");
+        } else if (GA <= 78 && GA >= 76) {
+            System.out.println("Equivalent Grade: 2.75 Remarks: Fair");
+        } else if (GA == 75) {
+            System.out.println("Equivalent Grade: 3.00 Remarks: Passed");
+        } else {
+            System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
+        }
+    }
+
+}

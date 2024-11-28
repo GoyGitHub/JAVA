@@ -1,0 +1,53 @@
+package andoyyy;
+import java.util.Scanner;
+
+public class main8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter grade for period 1: ");
+        double grade1 = scanner.nextDouble();
+        System.out.print("Enter grade for period 2: ");
+        double grade2 = scanner.nextDouble();
+        System.out.print("Enter grade for period 3: ");
+        double grade3 = scanner.nextDouble();
+        
+        double GA = (grade1 + grade2 + grade3) / 3;
+        System.out.printf("General Average (GA): ", GA);
+        
+        int GA_int = (int) GA;
+        
+        switch (GA_int) {
+            case 97: case 98: case 99: case 100:
+                System.out.println("Equivalent Grade: 1.00 Remarks: Excellent");
+                break;
+            case 94: case 95: case 96:
+                System.out.println("Equivalent Grade: 1.25 Remarks: Excellent");
+                break;
+            case 91: case 92: case 93:
+                System.out.println("Equivalent Grade: 1.50 Remarks: Very Good");
+                break;
+            case 88: case 89: case 90:
+                System.out.println("Equivalent Grade: 1.75 Remarks: Very Good");
+                break;
+            case 85: case 86: case 87:
+                System.out.println("Equivalent Grade: 2.00 Remarks: Good");
+                break;
+            case 82: case 83: case 84:
+                System.out.println("Equivalent Grade: 2.25 Remarks: Good");
+                break;
+            case 79: case 80: case 81:
+                System.out.println("Equivalent Grade: 2.50 Remarks: Satisfactory");
+                break;
+            case 76: case 77: case 78:
+                System.out.println("Equivalent Grade: 2.75 Remarks: Fair");
+                break;
+            case 75:
+                System.out.println("Equivalent Grade: 3.00 Remarks: Passed");
+                break;
+            default:
+                System.out.println("Equivalent Grade: 5.00 Remarks: Failed");
+                break;
+        }
+    }
+}

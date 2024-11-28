@@ -1,0 +1,15 @@
+package andoyyy;
+
+public class main9 {
+    public static void main(String[] args) {
+        int num = 143;
+        
+        while (num <= 220) {
+            System.out.println(num);
+            num++;
+        }
+    }
+}
+
+
+
